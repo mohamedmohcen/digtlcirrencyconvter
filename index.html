@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        
+        <div class="converter">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" />
+
+            <label for="from-currency">From Currency:</label>
+            <select id="from-currency">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="EGP">Egyptian Pound (EGP)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+                <option value="BRL">Brazilian Real (BRL)</option>
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="ZAR">South African Rand (ZAR)</option>
+                <option value="KRW">South Korean Won (KRW)</option>
+                <option value="SAR">Saudi Riyal (SAR)</option>
+                <option value="TRY">Turkish Lira (TRY)</option>
+                <option value="AED">Emirati Dirham (AED)</option>
+                <option value="KWD">Kuwaiti Dinar (KWD)</option>
+                <option value="QAR">Qatari Riyal (QAR)</option>
+                <option value="BHD">Bahraini Dinar (BHD)</option>
+                <option value="OMR">Omani Rial (OMR)</option>
+                <option value="JOD">Jordanian Dinar (JOD)</option>
+                <option value="LYD">Libyan Dinar (LYD)</option>
+                <option value="SDG">Sudanese Pound (SDG)</option>
+                <option value="YER">Yemeni Rial (YER)</option>
+                <option value="DZD">Algerian Dinar (DZD)</option> <!-- Added Algerian Dinar -->
+            </select>
+
+            <label for="to-currency">To Currency:</label>
+            <select id="to-currency">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="EGP">Egyptian Pound (EGP)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+                <option value="BRL">Brazilian Real (BRL)</option>
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="ZAR">South African Rand (ZAR)</option>
+                <option value="KRW">South Korean Won (KRW)</option>
+                <option value="SAR">Saudi Riyal (SAR)</option>
+                <option value="TRY">Turkish Lira (TRY)</option>
+                <option value="AED">Emirati Dirham (AED)</option>
+                <option value="KWD">Kuwaiti Dinar (KWD)</option>
+                <option value="QAR">Qatari Riyal (QAR)</option>
+                <option value="BHD">Bahraini Dinar (BHD)</option>
+                <option value="OMR">Omani Rial (OMR)</option>
+                <option value="JOD">Jordanian Dinar (JOD)</option>
+                <option value="LYD">Libyan Dinar (LYD)</option>
+                <option value="SDG">Sudanese Pound (SDG)</option>
+                <option value="YER">Yemeni Rial (YER)</option>
+                <option value="DZD">Algerian Dinar (DZD)</option> <!-- Added Algerian Dinar -->
+            </select>
+
+            <button onclick="convertCurrency()">Convert</button>
+
+            <h2>Result: <span id="result">0</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
